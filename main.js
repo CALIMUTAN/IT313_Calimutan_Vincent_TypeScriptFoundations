@@ -27,7 +27,6 @@ const generatReportDetails = async () => {
             const status = isPassing(average) ? "PASSING" : "PROBATION";
 
             return {name, average, status
-
             };
         
      });
@@ -48,16 +47,14 @@ const generatReportDetails = async () => {
         const studentLines = results
         .map(
             ({name, average, status}) =>
-                `${name} - Average: ${average.toFixed(2)} - ${status}`
+            `${name} - Average: ${average.toFixed(2)} - ${status}`
         )
         . join("\n");
-
-        const report = `=== IT313 Enrollment Eligibility Report ===
-        ${studentLines} 
-        Class Average: ${classAverage.toFixed(2)}
-        Passing: ${passing.length} / ${results.length}`;
-
-            console.log(report);
+        const report = `=== IT313 Enrollment Eligibility Report  ===
+${studentLines}
+Class Average: ${classAverage.toFixed(2)}
+Passing: ${passing.length} / ${results.length}`;
+        console.log(report);
 
 
     } catch (error) {
