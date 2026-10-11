@@ -1,5 +1,5 @@
 {
-  "name": "lab2",
+  "name": "lab3",
   "version": "1.0.0",
   "type": "module",
   "description": "",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
